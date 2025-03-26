@@ -181,10 +181,31 @@
       height: 325px;
       position: relative;
 
+      @media screen and (max-width: 1360px) {
+        height: 300px;
+      }
+      @media screen and (max-width: 1284px) {
+        height: 275px;
+      }
+      @media screen and (max-width: 1210px) {
+        width: calc(100% / 2 - 2px);
+      }
+      @media screen and (max-width: 802px) {
+        height: 225px;
+      }
+      @media screen and (max-width: 665px) {
+        height: 200px;
+      }
+      @media screen and (max-width: 577px) {
+        width: 100%;
+      }
+
       img {
         width: 100%;
         height: 100%;
         position: absolute;
+        object-position: center;
+        object-fit: cover;
         top: 0;
         left: 0;
 
