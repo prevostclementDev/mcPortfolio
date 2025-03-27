@@ -39,12 +39,12 @@
           </div>
         </nuxt-link>
 
-        <nuxt-link to="/projects/">
-          <div class="imgSquare">
-            <img src="~/public/projectsList/atlas.png" alt="">
-            <img src="~/public/projectsList/atlasLight.png" alt="">
-          </div>
-        </nuxt-link>
+<!--        <nuxt-link to="/projects/">-->
+<!--          <div class="imgSquare">-->
+<!--            <img src="~/public/projectsList/atlas.png" alt="">-->
+<!--            <img src="~/public/projectsList/atlasLight.png" alt="">-->
+<!--          </div>-->
+<!--        </nuxt-link>-->
 
         <nuxt-link to="/projects/merlet">
           <div class="imgSquare">
@@ -60,12 +60,12 @@
           </div>
         </nuxt-link>
 
-        <nuxt-link to="/projects/serafino">
-          <div class="imgSquare">
-            <img src="~/public/projectsList/sera.png" alt="">
-            <img src="~/public/projectsList/seraLight.png" alt="">
-          </div>
-        </nuxt-link>
+<!--        <nuxt-link to="/projects/serafino">-->
+<!--          <div class="imgSquare">-->
+<!--            <img src="~/public/projectsList/sera.png" alt="">-->
+<!--            <img src="~/public/projectsList/seraLight.png" alt="">-->
+<!--          </div>-->
+<!--        </nuxt-link>-->
       </div>
 
       <div class="line-text right">
@@ -217,6 +217,9 @@
           z-index: 1;
           opacity: 0;
           transition: .35s ease-in-out all;
+          @media (hover: none) {
+            opacity: 1;
+          }
         }
 
       }

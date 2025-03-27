@@ -38,15 +38,36 @@
   flex-direction: row;
   margin: 100px 0;
   position: relative;
+  
+  @media screen and (max-width: 857px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+
+  }
 
   .text {
     width: 70%;
     color: white;
     padding-left: 72px;
 
+    @media screen and (max-width: 857px) {
+      padding-left: 0;
+      width: 70%;
+
+    }
+
+    @media screen and (max-width: 629px) {
+      width: 90%;
+
+    }
+
     h1 {
       font-size: 25px;
       font-weight: 700;
+      @media screen and (max-width: 1017px) {
+        font-size: 20px;
+      }
 
     }
 
@@ -55,6 +76,15 @@
       font-size: 20px;
       margin-top: 50px;
       max-width: 70%;
+      
+      @media screen and (max-width: 1017px) {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: 857px) {
+        max-width: 100%;
+
+      }
 
     }
 
@@ -64,6 +94,21 @@
     width: 30%;
     display: flex;
     justify-content: flex-end;
+
+    @media screen and (max-width: 857px) {
+      width: 100%;
+
+    }
+    @media screen and (max-width: 629px) {
+      margin-top: 20px;
+
+      img {
+        width: 70%;
+        object-fit: contain;
+
+      }
+
+    }
 
   }
 
@@ -84,5 +129,11 @@
   object-fit: cover;
   object-position: center;
   margin-bottom: 100px;
+
+  @media screen and (max-width: 675px) {
+    height: 200px;
+
+  }
+
 }
 </style>
